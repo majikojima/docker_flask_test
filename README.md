@@ -1,14 +1,27 @@
+reference
+
+[https://gray-code.com/blog/flask-on-docker/]
+
 **contents**
 
-- [a](#a)
-  - [aa](#aa)
-    - [how](#how)
-    - [why](#why)
+- [Usage](#usage)
 
-# a
+## Usage
 
-## aa
+```bash
+$ docker image build -t flask .
 
-### how
+$ docker run -p 5000:80 -v ${PWD}/app:/app -d flask
+```
 
-### why
+URL access:
+
+```url
+localhost:5000
+```
+
+```bash
+$ docker image ls
+
+$ docker stop containerID
+```
